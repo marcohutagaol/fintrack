@@ -10,7 +10,7 @@ import { RecentTransactions } from "@/components/dashboard/RecentTransactions";
 import { ActiveInstallments } from "@/components/dashboard/ActiveInstallments";
 import { QuickAddModal } from "@/components/dashboard/QuickAddModal";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 30; // ISR: re-fetch from DB every 30 seconds
 
 export const metadata = {
   title: "Dashboard — FinTrack",
